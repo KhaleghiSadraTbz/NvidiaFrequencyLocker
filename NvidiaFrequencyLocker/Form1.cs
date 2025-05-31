@@ -43,8 +43,6 @@ namespace NvidiaFrequencyLocker
             numericUpDown1.Maximum = numericUpDown2.Value;
         }
 
-        int MessegeCount = 0;
-
         /// <summary>
         /// Runs nvidia-smi directly without using cmd.exe
         /// </summary>
