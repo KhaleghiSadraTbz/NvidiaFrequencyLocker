@@ -20,6 +20,16 @@ namespace NvidiaFrequencyLocker
 
         }
 
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Enter)
+            {
+                button1_Click(null, null);
+                return true;
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string min = numericUpDown1.Value.ToString();

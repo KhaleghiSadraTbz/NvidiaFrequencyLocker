@@ -7,6 +7,19 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>NvFreqIcon.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="NvFreqIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="NvFreqIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="NvFreqIcon.ico" />
+  </ItemGroup>
 
 </Project>
